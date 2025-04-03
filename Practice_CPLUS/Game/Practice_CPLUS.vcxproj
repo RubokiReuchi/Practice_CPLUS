@@ -26,6 +26,7 @@
     <ClInclude Include="Source\App.h" />
     <ClInclude Include="Source\Helpers\Console.h" />
     <ClInclude Include="Source\Helpers\Globals.h" />
+    <ClInclude Include="Source\Modules\Module.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>

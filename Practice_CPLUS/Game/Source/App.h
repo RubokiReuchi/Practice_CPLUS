@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Helpers/Globals.h"
+#include "Modules/Module.h"
 
 using namespace sf;
 
@@ -8,16 +9,16 @@ class App
 {
 public:
 	// Modulos
-	std::vector</*Module*/int*> listModules;
-private:
+	std::vector<Module*> listModules;
 
-	// relacionado con el frametime
+private:
+	Clock deltaClock;
+	float deltaTime = 0;
+
 	Texture exampleTex;
 	Sprite* exampleSprite = nullptr;
 
 public:
-
-	// relacionado con el frametime
 
 	App() {}
 	~App();
@@ -27,7 +28,7 @@ public:
 	void Render(sf::RenderWindow& window);
 	void CleanUp();
 
-	void AddModule(/*Module*/int* module);
+	void AddModule(Module* module);
 };
 
 extern App* app;

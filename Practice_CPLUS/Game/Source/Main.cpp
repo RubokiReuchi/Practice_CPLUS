@@ -14,6 +14,9 @@ int main(int argc, char** argv)
     // Crear una ventana
     RenderWindow window(VideoMode({800, 600}, 32), "Mi Juego 2D");
 
+    // Frame Limit
+    window.setFramerateLimit(60);
+    
     // Bucle principal
     while (window.isOpen())
     {
