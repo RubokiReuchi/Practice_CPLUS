@@ -1,8 +1,7 @@
 #pragma once
 
 #include "../Helpers/Globals.h"
-
-class Application;
+#include "../App.h"
 
 class Module
 {
@@ -20,13 +19,13 @@ public:
 	// Called when module is set active
 	virtual void Start() {}
 
-	virtual void PreUpdate(float dt) {}
+	virtual void PreUpdate(RenderWindow& window, float dt) {}
 
-	virtual void Update(float dt) {}
+	virtual void Update(RenderWindow& window, float dt) {}
 
-	virtual void PostUpdate(float dt) {}
+	virtual void PostUpdate(RenderWindow& window, float dt) {}
 
-	virtual void Render(sf::RenderWindow& window) {}
+	virtual void Render(RenderWindow& window) {}
 
 	virtual void CleanUp() {}
 

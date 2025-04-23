@@ -15,6 +15,9 @@
     <Filter Include="Files\Modules">
       <UniqueIdentifier>{b6139224-6674-4254-b6f6-0e5b6cf6830d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Files\Cards">
+      <UniqueIdentifier>{b60df0e5-0557-4a21-8226-3fb9a548286a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\App.cpp">
@@ -22,6 +25,18 @@
     </ClCompile>
     <ClCompile Include="Source\Main.cpp">
       <Filter>Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Modules\M_Scene.cpp">
+      <Filter>Files\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Modules\M_Input.cpp">
+      <Filter>Files\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Modules\M_Audio.cpp">
+      <Filter>Files\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Cards\Card.cpp">
+      <Filter>Files\Cards</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -36,6 +51,18 @@
     </ClInclude>
     <ClInclude Include="Source\Modules\Module.h">
       <Filter>Files\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Modules\M_Scene.h">
+      <Filter>Files\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Modules\M_Input.h">
+      <Filter>Files\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Modules\M_Audio.h">
+      <Filter>Files\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Cards\Card.h">
+      <Filter>Files\Cards</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

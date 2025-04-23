@@ -1,11 +1,11 @@
 #include "Helpers/Globals.h"
 #include "App.h"
 
-//using namespace sf;
-
 int main(int argc, char** argv)
 {
 	Console::print("Starting game 'Practice C++'");
+
+    srand(time(NULL));
 
     app = new App();
 
@@ -20,10 +20,10 @@ int main(int argc, char** argv)
     // Bucle principal
     while (window.isOpen())
     {
-        app->Update();
+        app->Update(window);
 
         // Process events
-        while (const std::optional event = window.pollEvent())
+        while (const optional event = window.pollEvent())
         {
             // Close window: exit
             if (event->is<Event::Closed>())
